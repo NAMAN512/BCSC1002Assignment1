@@ -6,8 +6,16 @@
  * */
 package execution;
 
+import definitions.Book;
+
 public class FrontDesk {
     public static void main(String[] args) {
-
+        Book book = new Book();
+        book.setBookName("The Third Door");
+        book.setAuthorOfTheBook("Alex Banayan");
+        book.setSbnNumberOfTheBook("9780804136662");
+        System.out.println(book.getBookName());
+        System.out.println(book.getAuthorOfTheBook());
+        System.out.println(book.getSbnNumberOfTheBook());
     }
 }
