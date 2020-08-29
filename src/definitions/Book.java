@@ -11,6 +11,19 @@ public class Book {
     private String authorOfTheBook;
     private String sbnNumberOfTheBook;
 
+    //constructor method
+
+    public Book() {
+        bookName = "The Third Door";
+        authorOfTheBook = "Alex Banayan";
+        sbnNumberOfTheBook = "9780804136662";
+    }
+
+    public Book(String bookName, String authorOfTheBook, String sbnNumberOfTheBook) {
+        this.bookName = bookName;
+        this.authorOfTheBook = authorOfTheBook;
+        this.sbnNumberOfTheBook = sbnNumberOfTheBook;
+    }
     //getter method
 
     public String getBookName() {
