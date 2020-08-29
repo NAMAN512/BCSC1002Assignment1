@@ -11,7 +11,7 @@ public class Book {
     private String authorOfTheBook;
     private String sbnNumberOfTheBook;
 
-    //constructor method
+    //constructor
 
     public Book() {
         bookName = "The Third Door";
@@ -51,4 +51,10 @@ public class Book {
     public void setSbnNumberOfTheBook(String sbnNumberOfTheBook) {
         this.sbnNumberOfTheBook = sbnNumberOfTheBook;
     }
+
+    public String toString() {
+        return String.format("Book Name: %s, Author of the Book: %s,SBN Number of the Book; %s",
+                getBookName(), getAuthorOfTheBook(), getSbnNumberOfTheBook());
+    }
+
 }

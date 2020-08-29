@@ -6,8 +6,12 @@
  * */
 package execution;
 
+import definitions.Book;
+
 public class FrontDesk {
     public static void main(String[] args) {
+        Book book = new Book();
+        System.out.println(book);
         System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n" +
                 "How may I help you today?\n" +
                 "1. Issue a new book for me.\n" +
