@@ -7,4 +7,14 @@
 package definitions;
 
 public class Library {
+    private Book[] provide;
+
+    public Book[] getProvide() {
+        return this.provide;
+    }
+
+    public void setProvide(Book[] provide) {
+        this.provide = provide;
+    }
+
 }

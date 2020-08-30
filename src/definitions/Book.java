@@ -26,10 +26,14 @@ public class Book {
         this.authorOfTheBook = authorOfTheBook;
         this.sbnNumberOfTheBook = sbnNumberOfTheBook;
     }
+
+    public Book(String bookName) {
+        this.bookName = bookName;
+    }
     //getter method
 
     public String getBookName() {
-        return bookName;
+        return this.bookName;
     }
 
     //stter method
@@ -39,7 +43,7 @@ public class Book {
     }
 
     public String getAuthorOfTheBook() {
-        return authorOfTheBook;
+        return this.authorOfTheBook;
     }
 
     public void setAuthorOfTheBook(String authorOfTheBook) {
@@ -47,16 +51,20 @@ public class Book {
     }
 
     public String getSbnNumberOfTheBook() {
-        return sbnNumberOfTheBook;
+        return this.sbnNumberOfTheBook;
     }
 
     public void setSbnNumberOfTheBook(String sbnNumberOfTheBook) {
         this.sbnNumberOfTheBook = sbnNumberOfTheBook;
     }
 
+    @Override
     public String toString() {
-        return String.format("Book Name: %s, Author of the Book: %s,SBN Number of the Book; %s",
-                getBookName(), getAuthorOfTheBook(), getSbnNumberOfTheBook());
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", authorOfTheBook='" + authorOfTheBook + '\'' +
+                ", sbnNumberOfTheBook='" + sbnNumberOfTheBook + '\'' +
+                '}';
     }
 
     @Override
