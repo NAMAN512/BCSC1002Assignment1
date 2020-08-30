@@ -9,6 +9,17 @@ package definitions;
 public class Library {
     private Book[] provide;
 
+    public Library() {
+        this.provide = new Book[10];
+        for (int index = 0; index < provide.length; index++) {
+            provide[index] = new Book("AvailableBook " + (index + 1));
+        }
+    }
+
+    public Library(Book[] provide) {
+        this.provide = provide;
+    }
+
     public Book[] getProvide() {
         return this.provide;
     }
